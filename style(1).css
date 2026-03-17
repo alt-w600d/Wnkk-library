@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #030040; /* Тёмно-синий фон */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Центрирует всё по горизонтали */
+}

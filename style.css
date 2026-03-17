@@ -1,0 +1,135 @@
+/* 1. Настройки всей страницы */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #030040; /* Тёмно-синий фон */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Центрирует всё по горизонтали */
+}
+
+/* 2. ШАПКА (Навбар) — Делаем её горизонтальной */
+.navbar {
+    display: flex;             /* Включает режим "в одну линию" */
+    align-items: center;       /* Центрирует лого и текст по вертикали */
+    justify-content: space-between; /* Раскидывает лого влево, а ссылку вправо */
+    background-color: #1c1c54;
+    width: 95%;                /* Ширина полоски */
+    max-width: 1100px;         /* Ограничение ширины */
+    height: 80px;
+    padding: 0 30px;           /* Отступы внутри */
+    border-radius: 50px;       /* Эффект "пилюли" */
+    margin-top: 20px;
+    box-sizing: border-box;    /* Чтобы отступы не ломали ширину */
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;                 /* Расстояние между картинкой и названием */
+}
+
+.logo-square {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.brand-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Контейнер для ссылок в правой части навбара */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;      /* Делаем текст жирным */
+    font-size: 22px;        /* Увеличиваем размер (было 18px) */
+    padding: 10px 20px;     /* Увеличиваем внутренние отступы для формы кнопки */
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-block;  /* Чтобы отступы padding работали корректно */
+}
+
+/* Эффект при наведении (акцент на синий цвет) */
+.nav-link:hover {
+    background-color: #141440; 
+    color: #3b82f6;
+}
+
+/* Не забудьте про расстояние между ними */
+.nav-right {
+    display: flex;
+    gap: 3,jpx;             /* Расстояние между Builds и Wnkk pedia */
+    align-items: center;
+}
+
+
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+/* 3. КОНТЕНТ (Заголовок и Кнопки) */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.welcome-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* 4. СЕТКА КНОПОК — строго в 2 колонки */
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ДВЕ КОЛОНКИ */
+    gap: 15px;                      /* Расстояние между кнопками */
+    width: 90%;
+    max-width: 800px;
+}
+
+.button-grid a {
+    background-color: #141440;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid transparent;  /* Заготовка под синюю рамку */
+    transition: 0.2s;
+}
+
+/* Эффект наведения с синей рамкой */
+.button-grid a:hover {
+    border-color: #3b82f6;          /* Ярко-синяя рамка */
+    background-color: #1c1c54;
+    transform: translateY(-2px);    /* Легкий подъем */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #030040;
+    color: white;
+    
+    /* Добавляем Segoe UI. Если его нет в системе, сработают запасные варианты */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1{
+
+}
